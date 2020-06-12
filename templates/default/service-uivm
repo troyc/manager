@@ -4,7 +4,7 @@
   "name": "uivm",
   "slot": "0",
   "hidden": "true",
-  "start_on_boot": "true",
+  "start_on_boot": "false",
   "start_on_boot_priority": "9",
   "provides-graphics-fallback": "true",
   "shutdown-priority": "-5",
