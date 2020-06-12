@@ -928,7 +928,7 @@ getVmMemoryTargetKib uuid = whenDomainID 0 uuid kibS where
                   return $ maybe 0 read v
 
 getVmStartOnBoot :: Uuid -> Rpc Bool
-getVmStartOnBoot uuid = nativeOverride uuid True $ readConfigPropertyDef uuid vmStartOnBoot False
+getVmStartOnBoot uuid = return False
 
 getVmHiddenInSwitcher :: Uuid -> Rpc Bool
 getVmHiddenInSwitcher uuid = readConfigPropertyDef uuid vmHidden False
